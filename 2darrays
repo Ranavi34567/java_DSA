@@ -1,0 +1,15 @@
+class Main {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        int[][] arr={{1,5,6,3},{3,7,9,4},{2,6,8,5}};
+        int r=arr.length;
+        int c=arr[0].length;
+        int i=0;
+        int j=2;
+        while(i<r && j<c){
+            System.out.println(arr[i][j]);
+            i=i+1;
+            j=j+1;
+        }
+    }
+}

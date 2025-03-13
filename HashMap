@@ -1,0 +1,24 @@
+import java.util.HashMap;
+class Main {
+    public static void main(String[] args) {
+        int[] a={3,5,3,2,8,6};
+        HashMap<Integer,Integer> m= new HashMap<>();
+        for(int i=0;i<a.length;i++){
+            int k=a[i];
+            if(m.containsKey(k)){
+                int prev=m.get(k);
+                int f=(prev+100);
+                m.put(k,f);
+            }
+            else{
+                int p=100;
+                m.put(k,p);
+            }
+        }
+         for(int t: m.keySet()){
+             System.out.println(t + ":" + m.get(t));
+         }
+        
+        
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        String arr="ammu";
+        int n=arr.length();
+        List<String> l=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                String t=arr.substring(i,j+1);
+                l.add(t);
+            }
+        }
+        System.out.println(l);
+    }
+}

@@ -1,0 +1,18 @@
+class Solution {
+    public int numOfSubarrays(int[] arr, int k, int threshold) {
+        int ans=0;
+        int n=arr.length;
+        for(int r=0;r<=n-k;r++){
+            int sum=0;
+            for(int j=r;j<r+k;j++){
+                sum=sum+arr[j];
+            }
+            int avg=sum/k;
+            if(avg>=threshold){
+                ans=ans+1;
+            }
+        }
+        return ans;
+        
+    }
+}

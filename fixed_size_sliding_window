@@ -1,0 +1,17 @@
+class Main {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        int[] arr={1,8,3,7,5,6};
+        int n=arr.length;
+        int c=Integer.MIN_VALUE;
+        int sl=3;
+        for(int r=0;r<=n-sl;r++ ){
+            int sum=0;
+            for(int j=r;j<r+sl;j++){
+                sum+=arr[j];
+            }
+            c=Math.max(c,sum);
+        }
+        System.out.println(c);
+    }
+}

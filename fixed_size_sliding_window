@@ -15,3 +15,27 @@ class Main {
         System.out.println(c);
     }
 }
+---------------------------------------------------------------
+class Main {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        int[] arr={1,8,3,7,5,6};
+        int n=arr.length;
+        int sl=3;
+        int ans=0;
+        int temp=0;
+        int l=0;
+        for(int r=0;r<n;r++ ){
+            temp+=arr[r];
+            if(r-l==sl){
+                temp-=arr[l];
+                l++;
+            }
+            if(r-l+1==sl){
+                ans=Math.max(ans,temp);
+            }
+        }
+        System.out.println(ans);
+    }
+}
+----------------------------------------------------------------------------

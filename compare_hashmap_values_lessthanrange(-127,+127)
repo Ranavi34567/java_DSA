@@ -1,0 +1,14 @@
+import java.util.HashMap;
+class Main {
+    public static void fun(HashMap<Integer,Integer> hm){
+        System.out.println(hm);
+        System.out.println(hm.get(1)==hm.get(4));
+           
+        }
+    public static void main(String[] args) {
+       HashMap<Integer,Integer> hm=new HashMap<>();
+       hm.put(1,12);
+       hm.put(4,12);
+       fun(hm);
+    }
+}

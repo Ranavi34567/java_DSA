@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.Arrays;
+class Main {
+    public static boolean arraysort(String a,String b){
+        char[] arr=a.toCharArray();
+        char[] brr=b.toCharArray();
+        Arrays.sort(arr);
+        Arrays.sort(brr);
+        return Arrays.equals(arr,brr);
+        
+    }
+    public static boolean fun(HashMap<String,String> hm1,HashMap<String,String> hm2){
+        for(String m:hm1.keySet()){
+            if(hm1.size()!=hm2.size()){
+                return false;
+            }
+            if(!hm2.containsKey(m)){
+                return false;
+            }
+            String a=hm1.get(m);
+            String b=hm2.get(m);
+            if(!arraysort(a,b)){
+                return false;
+            }
+        }
+        return true;   
+        }
+    public static void main(String[] args) {
+       HashMap<String,String> hm1=new HashMap<>();
+       hm1.put("a","apple");
+       HashMap<String,String> hm2=new HashMap<>();
+       hm2.put("a","elpap");
+       System.out.println(fun(hm1,hm2));
+    }
+}

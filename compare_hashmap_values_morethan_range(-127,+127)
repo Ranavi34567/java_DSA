@@ -1,0 +1,16 @@
+import java.util.HashMap;
+class Main {
+    public static void fun(HashMap<Integer,Integer> hm){
+        System.out.println(hm);
+        int a=hm.get(1);
+        int b=hm.get(4);
+        System.out.println(a==b);
+           
+        }
+    public static void main(String[] args) {
+       HashMap<Integer,Integer> hm=new HashMap<>();
+       hm.put(1,129);
+       hm.put(4,129);
+       fun(hm);
+    }
+}

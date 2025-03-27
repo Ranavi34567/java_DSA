@@ -1,3 +1,4 @@
+//exact k odd numbers=(atmost k odd numbers) - (atmost k-1 odd numbers)
 class Solution {
     public int atmost(int[] nums,int k){
         int l=0;

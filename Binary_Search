@@ -1,0 +1,26 @@
+class Main {
+    public  static int binarysearch(int[] arr, int target){
+        int l=0;
+        int n=arr.length;
+        int r=n-1;
+        while(l<=r){
+            int mid=(l+r)/2;
+            if(arr[mid]==target){
+                return mid;
+            }
+            else if(arr[mid]>target){
+                r=mid-1;
+            }
+            else{
+                l=mid+1;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        int[] arr={1,5,8,12,14,16,20,25,27,30};
+        System.out.println(binarysearch(arr,27));
+        
+    }
+}

@@ -4,7 +4,7 @@ class Main {
         int n=arr.length;
         int r=n-1;
         while(l<=r){
-            int mid=(l+(r-l))/2;
+            int mid=l+(r-l)/2;
             // long mid=(l+r)/2;
             if(arr[mid]==target){
                 return mid;

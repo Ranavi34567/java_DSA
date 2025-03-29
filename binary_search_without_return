@@ -1,0 +1,23 @@
+class Main {
+   public static void main(String[] args) {
+        int[] arr={1,5,8,12,14,16,20,25,27,30};
+        int l=0;
+        int n=arr.length;
+        int r=n-1;
+        int ans=-1;
+        while(l<=r){
+            int mid=(l+r)/2;
+            if(arr[mid]==target){
+                ans= mid;
+                break;
+            }
+            else if(arr[mid]>target){
+                r=mid-1;
+            }
+            else{
+                l=mid+1;
+            }
+        }
+       System.out.println(ans);        
+    }
+}

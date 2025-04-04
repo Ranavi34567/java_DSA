@@ -1,0 +1,47 @@
+class Solution {
+    public static int leftmost(int[]nums,int pos){
+        int l=0;
+        int r=nums.length-1;
+        while(l<=r){
+            int m=l+(r-l)/2;
+            if(nums[m]>=pos){
+                r=m-1;
+            }
+            else{
+                l=m+1;
+            }
+        }
+        return l;
+    } 
+     
+    public int maximumCount(int[] nums) {
+        int n=leftmost(nums,0);
+        int p=leftmost(nums,1);
+        int ans=nums.length-p;
+        ans=Math.max(ans,n);
+        return ans;
+        
+        
+    }
+}
+-----------------------------------------------------------------------------
+class Solution {
+    public int maximumCount(int[] nums) {
+        int c1=0;
+        int c2=0;
+        int ans=0;
+        int n=nums.length;
+        for(int i=0;i<n;i++){
+            if(nums[i]<0 && nums[i]!=0){
+                c1++;
+            }
+            else if(nums[i]>0 && nums[i]!=0){
+                c2++;
+            }
+            ans=Math.max(c1,c2);
+
+        }
+        return ans;
+}
+}
+-------------------------------------------------------------------------------

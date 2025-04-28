@@ -1,0 +1,15 @@
+// class and objects are used to create user-defined datatypes instead of defined datatypes
+class ChaiShop{
+    String branchName;
+    int cupSold;
+}
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop();
+        branch1.branchName="Bahubali Adda";
+        System.out.println(branch1.branchName);
+        branch1.cupSold=5;
+        System.out.println(branch1.cupSold);
+        
+    }
+}

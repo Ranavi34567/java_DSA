@@ -1,0 +1,29 @@
+class ChaiShop{
+    String branchName;
+    int cupSold;
+    int pricePerCup;
+    public ChaiShop(String bn,int cs,int ppc){
+        this.branchName=bn;
+        this.cupSold=cs;
+        this.pricePerCup=ppc;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        //branch1
+        ChaiShop branch1=new ChaiShop("Bahubali adda",4,6);
+        System.out.println(branch1.branchName);
+        System.out.println(branch1.cupSold);
+        System.out.println(branch1.pricePerCup);
+        
+        //branch2
+        ChaiShop branch2=new ChaiShop("Mahesh Adda",5,7);
+        System.out.println(branch2.branchName);
+        System.out.println(branch2.cupSold);
+        System.out.println(branch2.pricePerCup);
+        
+        
+        
+        
+    }
+}

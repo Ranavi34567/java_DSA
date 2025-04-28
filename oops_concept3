@@ -1,3 +1,4 @@
+//this keyword is used to access the class variables.(global variables)
 class ChaiShop{
     String branchName; //this.branchName value is invoked.
     int cupSold;

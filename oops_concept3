@@ -1,10 +1,11 @@
 class ChaiShop{
-    String branchName;
+    String branchName; //this.branchName value is invoked.
     int cupSold;
     int pricePerCup;
     int numberOfEmployees;
+//this.branchName is different and branchName is different
     public ChaiShop(String branchName,int cupSold,int pricePerCup,int numberOfEmployees){
-        this.branchName=branchName;
+        this.branchName=branchName; //branchName is invoked.
         this.cupSold=cupSold;
         this.pricePerCup=pricePerCup;
         this.numberOfEmployees=numberOfEmployees;
